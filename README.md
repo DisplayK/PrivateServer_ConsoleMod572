@@ -1,12 +1,10 @@
 # Console Mod
 The Console Mod, intended to be used only on the Private Server. Enables use of a console window on the private server. 
 
-**Works on Private Server 6.7.2**  
-**Requires Horocore**
+**Works on Private Server 5.7.2**
 
 Notable Features:
  - Execute commands
- - Add perks ingame
  - Press V to enable flying
  - Possess other characters in the game
  - Spawn any item

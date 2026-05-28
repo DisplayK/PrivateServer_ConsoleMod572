@@ -1,0 +1,30 @@
+name: Bug Report
+description: File a bug report
+labels: [ bug ]
+body:
+  - type: dropdown
+    id: dbdversion
+    attributes:
+      label: Game Version
+      multiple: false
+      options:
+        - 6.7.2
+        - 6.7.0
+        - 6.5.2
+        - 5.7.2
+        - 5.6.2
+  - type: input
+    id: modversion
+    attributes:
+      label: Console Mod Version
+      description: What version of the console mod are you using?
+      placeholder: ...
+    validations:
+      required: true
+  - type: textarea
+    id: issuedesc
+    attributes:
+      label: Issue Description
+      description: Describe the issue
+    validations:
+      required: true

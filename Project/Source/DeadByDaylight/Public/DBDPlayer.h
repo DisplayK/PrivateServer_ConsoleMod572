@@ -605,7 +605,7 @@ private:
     void Server_UpdateScreenAspectRatio(const float value);
     
 public:
-    UFUNCTION(Reliable, Server, WithValidation)
+    UFUNCTION(Reliable, Server, WithValidation, BlueprintCallable)
     void Server_SetCustomization(const TArray<FName>& customizationParts, const TArray<FCharmIdSlot>& customizationCharms);
     
 private:
@@ -774,7 +774,7 @@ public:
     void Multicast_SetDebugCarry(bool enabled);
     
 protected:
-    UFUNCTION(NetMulticast, Reliable, WithValidation)
+    UFUNCTION(NetMulticast, Reliable, WithValidation, BlueprintCallable)
     void Multicast_SetCustomization(const TArray<FName>& customizationParts, const TArray<FCharmIdSlot>& customizationCharms);
     
 public:

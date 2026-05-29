@@ -7,29 +7,29 @@
 #include "ItemUIData.h"
 #include "CustomizationData.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCustomizationData : public FDBDTableRowBase {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FName ID;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     int32 AssociatedCharacter;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     EPlayerRole AssociatedRole;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     EItemRarity Rarity;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FItemUIData UIData;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FItemAvailability Availability;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FString InclusionVersion;
     
     DEADBYDAYLIGHT_API FCustomizationData();
